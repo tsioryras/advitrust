@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conseils en Communication et en RSE{% endblock %}
+
+{% block body %}
+
+    <!-- start banner Area -->
+    <section class="banner-area" id="accueil">
+        <div class="container">
+            <div class="row fullscreen align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-6 col-sm-12 banner-left">
+                    <h1 style="">Mettez votre business sur orbite!</h1>
+                    <p id="sous-titre">
+                        Consultance en Communication et en RSE
+
+                    </p>
+                    <!--<a class="rcornersa" href="#nouschoisir">En savoir plus</a>-->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 banner-right d-flex align-self-end">
+                    <!--<img class="img-fluid" src="img/hero-img.png" alt="">-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->
+
+    <!-- Start home-about Area -->
+    <section class="home-about-area pt-120" id="nouschoisir">
+        <div class="container" >
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-6 col-sm-12 home-about-left">
+                    <!--<img class="img-fluid" src="img/fichier 10.png" alt="about_advitrust" width="30%">-->
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 home-about-right" >
+                    <h2 class="text-uppercase">A propos</h2>
+                    <p class="justify">
+                        Comme le gâteau qui est un ensemble de plusieurs ingrédients sélectionnés, préparés et cuisinés avec patience et amour, votre communication et la responsabilité sociétale de votre entreprise doivent passer par un processus bien défini pour être le plus optimal possible.   <br><br>
+                        ADVITRUST Consulting est un cabinet proposant de vous accompagner dans la mise en œuvre de vos différentes activités de communications et de RSE pour que vous puissiez exprimer le meilleur de vous-même tout en restant concentré sur votre coeur de métier.
+                    </p>
+                    <button id="rcorners" onclick="location.href='<?=base_url()?>Services'" type="button">Nos services</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End home-about Area -->
+
+    <!-- Start services Area -->
+    <section class="services-area section-gap">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-6 col-sm-12 home-about-left">
+                    <h6>A propos</h6>
+                    <h2 class="text-uppercase">HISTORIQUE</h2>
+                    <p class="justify">
+                        Après un repositionnement stratégique et une restructuration interne, Digital Art Studio – Madagascar, agence de communication œuvrant dans la création visuelle telle que la conception graphique, la conception de spots publicitaires et l’édition de supports de communication, devient ADVITRUST Consulting. ADVITRUST est un cabinet spécialisé dans le conseil en Communication et le conseil en Responsabilité Sociétale et Environnementale.<br><br>
+
+                        Ce repositionnement vient du constat que de plus en plus en plus d’agences de communication qui voient le jour à Madagascar offrent une multitude de services tous différents, rendant ainsi la tâche difficile aux annonceurs pour trouver l’agence adéquate à leur besoin et leur budget. <br><br>
+
+                        Le pôle RSE voit le jour après la constatation que la RSE n’est pas encore démocratisée à Madagascar. La plupart des entreprises voient cela comme un investissement sans retour ou encore une ligne de budget de plus. Nous avons pour ambition de démocratiser les activités RSE et en faire un levier du développement durable gagnant-gagnant.<br><br>
+
+                        Le profil type de notre clientèle comprend aussi bien les particuliers que les entreprises, publiques ou privées, souhaitant optimiser leur méthode de communication et améliorer la gestion et la transparence de leurs activités RSE.
+
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 home-about-right" id="nouschoisir">
+                    <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/hourglass.png" alt="about_advitrust">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End services Area -->
+
+
+
+    <!-- Start brands Area -->
+    <section class="brands-area">
+        <div class="container">
+            <div class="brand-wrap">
+                <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
+                    <div class="col single-brand">
+                        <a href="#"><img class="mx-auto" src="<?php echo base_url(); ?>assets/img/l1.png" alt="TFM"></a>
+                    </div>
+                    <div class="col single-brand">
+                        <a href="#"><img class="mx-auto" src="<?php echo base_url(); ?>assets/img/l2.png" alt="Observatoire du foncier"></a>
+                    </div>
+                    <div class="col single-brand">
+                        <a href="#"><img class="mx-auto" src="<?php echo base_url(); ?>assets/img/l3.png" alt="Save the children"></a>
+                    </div>
+                    <div class="col single-brand">
+                        <a href="#"><img class="mx-auto" src="<?php echo base_url(); ?>assets/img/l4.png" alt="American Center"></a>
+                    </div>
+                    <div class="col single-brand">
+                        <a href="#"><img class="mx-auto" src="<?php echo base_url(); ?>assets/img/l5.png" alt="Assurances Aro"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End brands Area -->
+
+
+
+{% endblock %}

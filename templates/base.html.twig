@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>ADVITRUST | {% block title %}{% endblock %}</title>
+        <meta name="resource-type" content="document"/>
+        <meta name="robots" content="all, index, follow"/>
+        <meta name="googlebot" content="all, index, follow"/>
+        <meta name="keywords" content="externalisation, communication, audit de communication, Marketing Digital"/>
+        <meta name="description" content="ADVITRUST Consulting est un cabinet de consultance en Communication et en RSE"/>
+        <meta property="keywords" content="">
+        <meta property="description" content="">
+        <meta property="og:description" content="ADVITRUST Consulting est un cabinet de consultance en Communication et en RSE"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="ADVITRUST | Conseils en Communication et en RSE"/>
+        <meta property="og:url" content="https://advitrust-consulting.mg"/>
+        <meta property="og:image" content="https://advitrust-consulting.mg/img/assets/fb-open-graph.jpg"/>
+        <link rel="canonical" href="https://advitrust-consulting.mg/"/>
+        <!-- Le styles -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"/>
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <!--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
+        <![endif]-->
+
+        <!-- Le fav and touch icons -->
+
+        <link rel="stylesheet" type="text/css" href="{{ asset('build/app.css') }}">
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
+    </head>
+    <body>
+        <header id="header" class="header-scrolled">
+            <div class="container main-menu">
+                <div class="row align-items-center justify-content-between d-flex">
+                    <div id="logo">
+                        <a href="{{ path('welcome') }}"><img src="" alt="advitrust logo" title="" class="changing"></a>
+                    </div>
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                            <li><a href="{{ path('welcome') }}">Accueil</a></li>
+                            <li><a href="{{ path('t_i_d') }}">Trophée Initiatives Durables</a></li>
+                            <li><a href="{{ path('services') }}">Services</a></li>
+                            <li><a href="{{ path('blog') }}">Blog</a></li>
+                        </ul>
+                    </nav><!-- #nav-menu-container -->
+                </div>
+            </div>
+        </header>
+
+        {% block body %}{% endblock %}
+
+        <footer class="footer-area section-gap"style="text-align: center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-12" style="text-align: justify">
+                        <div class="single-footer-widget">
+                            <h4>A propos</h4>
+                            <p>
+                                Cabinet spécialisé dans le conseil en communication et en RSE, nous vous accompagnos depuis la phase d'étude jusqu'à l'implémentation.
+                            </p>
+
+                            <!--<div class="footer-social d-flex align-items-center">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                            <!-- Begin Mailchimp Signup Form -->
+                            <div class="" id="mc_embed_signup">
+                                <form action="https://advitrust-consulting.us19.list-manage.com/subscribe/post?u=f26aada1e1dbb9fc28ecf27f4&amp;id=b858971b66" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+                                    <div class="input-group">
+                                        <h4>Abonnez-vous à notre newsletter</h4>
+                                        <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Entrez votre adresse email" required=""/>
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit" id="mc-embedded-subscribe">
+                                                <span class="lnr lnr-arrow-right"></span>
+                                            </button>
+                                        </div>
+                                        <div class="info"></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--End mc_embed_signup-->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 offset-lg-2 col-md-6 col-sm-12" style="text-align: left" >
+                        <div class="single-footer-widget">
+                            <h4>Où nous trouver</h4>
+                            <p>
+                                Lot III B 57 Morarano Andoharanofotsy Antananarivo 102
+                            </p>
+                            <p>
+                                +261 32 67 705 86 <br>
+                                +261 34 13 486 26
+                            </p>
+
+                            <p>
+                                apollo11@advitrust-consulting.mg
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;padding-top: 100px;padding-bottom: -150px;">
+                    <div class="col-lg-4 offset-lg-4 offset-md-4 col-md-4 col-sm-12">
+                        <div class="single-footer-widget">
+                            <img src="https://advitrust-consulting.mg/assets/img/logo.png" alt="advitrust logo white">
+                        </div>
+                        <p>@copyright - 2019 </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="{{ asset('build/app.js') }}"></script>
+        {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
+    </body>
+</html>
