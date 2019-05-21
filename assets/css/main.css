@@ -1102,37 +1102,37 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 }
 
-.genric-btn.primary-border {
+.generic-btn.primary-border {
   color: #8490ff;
   border: 1px solid #8490ff;
   background: #fff;
 }
 
-.genric-btn.primary-border:hover {
+.generic-btn.primary-border:hover {
   color: #fff;
   background: #8490ff;
   border: 1px solid transparent;
 }
 
-.genric-btn.success {
+.generic-btn.success {
   color: #fff;
   background: #4cd3e3;
   border: 1px solid transparent;
 }
 
-.genric-btn.success:hover {
+.generic-btn.success:hover {
   color: #4cd3e3;
   border: 1px solid #4cd3e3;
   background: #fff;
 }
 
-.genric-btn.success-border {
+.generic-btn.success-border {
   color: #4cd3e3;
   border: 1px solid #4cd3e3;
   background: #fff;
 }
 
-.genric-btn.success-border:hover {
+.generic-btn.success-border:hover {
   color: #fff;
   background: #4cd3e3;
   border: 1px solid transparent;
@@ -2553,9 +2553,7 @@ background-size: cover;
 }
 
 .home-about-area{
-  background-image: url(../img/about-bg.jpg);
-  background-repeat: no-repeat;
-  
+  background: url("../img/about-bg.jpg") no-repeat;
 }
 
 .home-about-right h6 {

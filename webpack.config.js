@@ -18,11 +18,14 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('about-bg','./assets/img/about-bg.jpg')
+    .addEntry('about-l-bg','./assets/img/about-l-bg.png')
+    .addEntry('about-r-bg','./assets/img/about-r-bg.png')
     .addEntry('history-bg','./assets/img/hourglass.png')
     .addEntry('tid_logo','./assets/img/tid_logo.png')
     .addEntry('logo','./assets/img/advitrust-logo.png')
-    //.addEntry('page1', './assets/js/page1.js')
+    .addEntry('logo_2','./assets/img/logo.png')
+    .addEntry('logo1','./assets/img/logo_1.png')
+    .addEntry('info','./assets/img/info.png')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
@@ -70,7 +73,7 @@ Encore
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
-    //.addEntry('admin', './assets/js/admin.js')
+    //.addEntry('admin', './assets/js/app.js')
 ;
 
 module.exports = Encore.getWebpackConfig();

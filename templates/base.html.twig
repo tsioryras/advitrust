@@ -28,14 +28,18 @@
         {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
     </head>
     <body>
+        <div id="back-shadow" class=""><button id="close-menu" class="btn btn-outline-secondary"><span class="lnr lnr-cross"></span></button></div>
         <header class="navbar navbar-default">
             <div class="container-fluid">
+                <a class="navbar-brand" href="{{ path('welcome') }}">
+                    <img id="adv_logo" alt="logo" src="{{ asset('build/images/advitrust-logo.png') }}"/>
+                    <img id="adv_logo_1" alt="logo" src="{{ asset('build/images/logo_1.png') }}"/>
+                </a>
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="{{ path('welcome') }}">
-                        <img alt="logo" src="{{ asset('build/images/advitrust-logo.png') }}"/>
-                    </a>
-                    <nav>
-                        <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                    <button id="mobile-nav-toggle" class="hidden btn btn-outline-secondary" type="button"><i class="lnr lnr-menu"></i></button>
+                    <nav id="side-menu">
+                        <ul class="nav-menu sf-js-enabled sf-arrows">
+                            <li><a href="{{ path('welcome') }}">Accueil</a></li>
                             <li><a href="{{ path('welcome') }}">Accueil</a></li>
                             <li><a href="{{ path('services') }}">Services</a></li>
                             <li><a href="{{ path('blog') }}">Blog</a></li>
@@ -49,7 +53,7 @@
         <div class="container" id="content_body">
             {% block body %}{% endblock %}
         </div>
-        <footer class="footer-area section-gap"style="text-align: center">
+        <footer class="footer-area section-gap" style="text-align: center">
                 <div class="row">
                     <div class="footer-section col-lg-4 offset-lg-1 col-md-6 col-sm-12" style="text-align: left">
                         <div class="single-footer-widget">
@@ -103,14 +107,20 @@
                 <div class="row" id="copyright">
                     <div class="col-lg-4 offset-lg-4 offset-md-4 col-md-4 col-sm-12">
                         <div class="single-footer-widget">
-                            <img src="https://advitrust-consulting.mg/assets/img/logo.png" alt="advitrust logo white">
+                            <img src="{{ asset('build/images/logo.png') }}" alt="advitrust logo white">
                         </div>
                         <p>@copyright - 2019 </p>
                     </div>
                 </div>
         </footer>
 
-        <script src="{{ asset('build/app.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
+        <script>
+
+            $( "body" ).click(function() {
+                alert('ok');
+            });
+        </script>
     </body>
 </html>

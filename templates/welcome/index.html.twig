@@ -25,48 +25,66 @@
     <!-- End banner Area -->
 
     <!-- Start home-about Area -->
-    <section class="home-about-area pt-120">
-        <div class="container" >
+    <section class="home-about-area pt-120 section-gap">
             <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6 col-md-6 col-sm-12 home-about-left">
-                    <img class="img-fluid" src="{{ asset('build/images/about-bg.jpg') }}" alt="about_advitrust"/>
+                <div class="col-lg-6 col-md-6 col-sm-12" id="home-about-left">
+                    <img class="img-fluid" src="{{ asset('build/images/about-l-bg.png') }}" alt="about_advitrust"/>
+                    <img class="img-fluid-responsive" src="{{ asset('build/images/info.png') }}" alt="about_advitrust"/>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 home-about-right" >
-                    <h2 class="text-uppercase">QUI SOMMES NOUS?</h2>
-                    <p class="justify">
-                        Comme le gâteau qui est un ensemble de plusieurs ingrédients sélectionnés, préparés et cuisinés avec patience et amour, votre communication et la responsabilité sociétale de votre entreprise doivent passer par un processus bien défini pour être le plus optimal possible.   <br><br>
-                        ADVITRUST Consulting est un cabinet proposant de vous accompagner dans la mise en œuvre de vos différentes activités de communications et de RSE pour que vous puissiez exprimer le meilleur de vous-même tout en restant concentré sur votre coeur de métier.
-                    </p>
+                <div class="col-lg-6 col-md-6 col-sm-12" id="home-about-right" >
+                    <h2 class="text-uppercase"> QUI SOMMES NOUS?</h2>
+                    <div class="justify">
+                        <p>Comme le gâteau qui est un ensemble de plusieurs ingrédients sélectionnés,
+                            préparés et cuisinés avec patience et amour, votre communication et la responsabilité
+                            sociétale de votre entreprise doivent passer par un processus bien défini
+                            pour être le plus optimal possible.   </p>
+                        <p>ADVITRUST Consulting est un cabinet proposant de vous accompagner dans
+                            la mise en œuvre de vos différentes activités de communications et
+                            de RSE pour que vous puissiez exprimer le meilleur de vous-même tout
+                            en restant concentré sur votre coeur de métier.
+                        </p>
+                    </div>
                     <button id="rcorners" class="btn btn-outline-secondary" onclick="location.href="{{ path('services') }}" type="button">Nos services</button>
                 </div>
             </div>
-        </div>
+
     </section>
     <!-- End home-about Area -->
 
     <!-- Start services Area -->
     <section class="services-area section-gap">
-        <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6 col-md-6 col-sm-12 home-about-left">
-                    <h6>A propos</h6>
-                    <h2 class="text-uppercase">HISTORIQUE</h2>
-                    <p class="justify">
-                        Après un repositionnement stratégique et une restructuration interne, Digital Art Studio – Madagascar, agence de communication œuvrant dans la création visuelle telle que la conception graphique, la conception de spots publicitaires et l’édition de supports de communication, devient ADVITRUST Consulting. ADVITRUST est un cabinet spécialisé dans le conseil en Communication et le conseil en Responsabilité Sociétale et Environnementale.<br><br>
-
-                        Ce repositionnement vient du constat que de plus en plus en plus d’agences de communication qui voient le jour à Madagascar offrent une multitude de services tous différents, rendant ainsi la tâche difficile aux annonceurs pour trouver l’agence adéquate à leur besoin et leur budget. <br><br>
-
-                        Le pôle RSE voit le jour après la constatation que la RSE n’est pas encore démocratisée à Madagascar. La plupart des entreprises voient cela comme un investissement sans retour ou encore une ligne de budget de plus. Nous avons pour ambition de démocratiser les activités RSE et en faire un levier du développement durable gagnant-gagnant.<br><br>
-
-                        Le profil type de notre clientèle comprend aussi bien les particuliers que les entreprises, publiques ou privées, souhaitant optimiser leur méthode de communication et améliorer la gestion et la transparence de leurs activités RSE.
-
-                    </p>
+                <div class="col-sm-12" id="service-top">
+                    <img class="img-fluid-responsive" src="{{ asset('build/images/hourglass.png') }}" alt="history_advitrust"/>
                 </div>
-                <div class="col-lg-6 col-md-6 home-about-right">
+                <div class="col-lg-6 col-md-6 col-sm-12" id="history-about-left">
+                    <h2 class="text-uppercase"> HISTORIQUE</h2>
+                    <div class="justify">
+                        <p>Après un repositionnement stratégique et une restructuration interne,
+                            Digital Art Studio – Madagascar, agence de communication œuvrant dans
+                            la création visuelle telle que la conception graphique, la conception de
+                            spots publicitaires et l’édition de supports de communication,
+                            devient ADVITRUST Consulting. ADVITRUST est un cabinet spécialisé
+                            dans le conseil en Communication et le conseil en Responsabilité Sociétale et Environnementale.</p>
+                        <p>Ce repositionnement vient du constat que de plus en plus en plus d’agences de
+                            communication qui voient le jour à Madagascar offrent une multitude de services
+                            tous différents, rendant ainsi la tâche difficile aux annonceurs pour trouver
+                            l’agence adéquate à leur besoin et leur budget.</p>
+                        <p>Le pôle RSE voit le jour après la constatation que la RSE n’est pas encore démocratisée à
+                            Madagascar. La plupart des entreprises voient cela comme un investissement sans retour
+                            ou encore une ligne de budget de plus. Nous avons pour ambition de démocratiser les activités
+                            RSE et en faire un levier du développement durable gagnant-gagnant.</p>
+                        <p>Le profil type de notre clientèle comprend aussi bien les particuliers que les entreprises,
+                            publiques ou privées, souhaitant optimiser leur méthode de communication et améliorer la
+                            gestion et la transparence de leurs activités RSE.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" id="history-about-right">
                     <img class="img-fluid" src="{{ asset('build/images/hourglass.png') }}" alt="history_advitrust"/>
                 </div>
             </div>
-        </div>
+
     </section>
     <!-- End services Area -->
 
