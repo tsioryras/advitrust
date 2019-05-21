@@ -25,19 +25,19 @@
     <!-- End banner Area -->
 
     <!-- Start home-about Area -->
-    <section class="home-about-area pt-120" id="nouschoisir">
+    <section class="home-about-area pt-120">
         <div class="container" >
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 col-sm-12 home-about-left">
-                    <!--<img class="img-fluid" src="img/fichier 10.png" alt="about_advitrust" width="30%">-->
+                    <img class="img-fluid" src="{{ asset('build/images/about-bg.jpg') }}" alt="about_advitrust"/>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12 home-about-right" >
-                    <h2 class="text-uppercase">A propos</h2>
+                <div class="col-lg-6 col-md-6 col-sm-12 home-about-right" >
+                    <h2 class="text-uppercase">QUI SOMMES NOUS?</h2>
                     <p class="justify">
                         Comme le gâteau qui est un ensemble de plusieurs ingrédients sélectionnés, préparés et cuisinés avec patience et amour, votre communication et la responsabilité sociétale de votre entreprise doivent passer par un processus bien défini pour être le plus optimal possible.   <br><br>
                         ADVITRUST Consulting est un cabinet proposant de vous accompagner dans la mise en œuvre de vos différentes activités de communications et de RSE pour que vous puissiez exprimer le meilleur de vous-même tout en restant concentré sur votre coeur de métier.
                     </p>
-                    <button id="rcorners" onclick="location.href='<?=base_url()?>Services'" type="button">Nos services</button>
+                    <button id="rcorners" class="btn btn-outline-secondary" onclick="location.href="{{ path('services') }}" type="button">Nos services</button>
                 </div>
             </div>
         </div>
@@ -62,8 +62,8 @@
 
                     </p>
                 </div>
-                <div class="col-lg-6 col-md-6 home-about-right" id="nouschoisir">
-                    <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/hourglass.png" alt="about_advitrust">
+                <div class="col-lg-6 col-md-6 home-about-right">
+                    <img class="img-fluid" src="{{ asset('build/images/hourglass.png') }}" alt="history_advitrust"/>
                 </div>
             </div>
         </div>

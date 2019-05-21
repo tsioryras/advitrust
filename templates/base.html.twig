@@ -14,7 +14,6 @@
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="ADVITRUST | Conseils en Communication et en RSE"/>
         <meta property="og:url" content="https://advitrust-consulting.mg"/>
-        <meta property="og:image" content="https://advitrust-consulting.mg/img/assets/fb-open-graph.jpg"/>
         <link rel="canonical" href="https://advitrust-consulting.mg/"/>
         <!-- Le styles -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"/>
@@ -29,30 +28,30 @@
         {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
     </head>
     <body>
-        <header id="header" class="header-scrolled">
-            <div class="container main-menu">
-                <div class="row align-items-center justify-content-between d-flex">
-                    <div id="logo">
-                        <a href="{{ path('welcome') }}"><img src="" alt="advitrust logo" title="" class="changing"></a>
-                    </div>
-                    <nav id="nav-menu-container">
+        <header class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{ path('welcome') }}">
+                        <img alt="logo" src="{{ asset('build/images/advitrust-logo.png') }}"/>
+                    </a>
+                    <nav>
                         <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
                             <li><a href="{{ path('welcome') }}">Accueil</a></li>
-                            <li><a href="{{ path('t_i_d') }}">Trophée Initiatives Durables</a></li>
                             <li><a href="{{ path('services') }}">Services</a></li>
                             <li><a href="{{ path('blog') }}">Blog</a></li>
+                            <li><a href="{{ path('t_i_d') }}">Trophée Initiatives Durables</a></li>
                         </ul>
-                    </nav><!-- #nav-menu-container -->
+                    </nav>
                 </div>
             </div>
         </header>
 
-        {% block body %}{% endblock %}
-
+        <div class="container" id="content_body">
+            {% block body %}{% endblock %}
+        </div>
         <footer class="footer-area section-gap"style="text-align: center">
-            <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-12" style="text-align: justify">
+                    <div class="footer-section col-lg-4 offset-lg-1 col-md-6 col-sm-12" style="text-align: left">
                         <div class="single-footer-widget">
                             <h4>A propos</h4>
                             <p>
@@ -64,10 +63,10 @@
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                             </div>-->
                             <!-- Begin Mailchimp Signup Form -->
-                            <div class="" id="mc_embed_signup">
+                            <div class="footer-section" id="mc_embed_signup">
                                 <form action="https://advitrust-consulting.us19.list-manage.com/subscribe/post?u=f26aada1e1dbb9fc28ecf27f4&amp;id=b858971b66" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+                                    <h4>Abonnez-vous à notre newsletter</h4>
                                     <div class="input-group">
-                                        <h4>Abonnez-vous à notre newsletter</h4>
                                         <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Entrez votre adresse email" required=""/>
                                         <div class="input-group-btn">
                                             <button class="btn btn-default" type="submit" id="mc-embedded-subscribe">
@@ -82,7 +81,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 offset-lg-2 col-md-6 col-sm-12" style="text-align: left" >
+                    <div class="footer-section col-lg-4 offset-lg-2 col-md-6 col-sm-12" style="text-align: left" >
                         <div class="single-footer-widget">
                             <h4>Où nous trouver</h4>
                             <p>
@@ -100,7 +99,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="text-align: center;padding-top: 100px;padding-bottom: -150px;">
+            <hr>
+                <div class="row" id="copyright">
                     <div class="col-lg-4 offset-lg-4 offset-md-4 col-md-4 col-sm-12">
                         <div class="single-footer-widget">
                             <img src="https://advitrust-consulting.mg/assets/img/logo.png" alt="advitrust logo white">
@@ -108,7 +108,6 @@
                         <p>@copyright - 2019 </p>
                     </div>
                 </div>
-            </div>
         </footer>
 
         <script src="{{ asset('build/app.js') }}"></script>

@@ -1,0 +1,32 @@
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "magnific-popup.css";
+@import "font-awesome.min.css";
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#content_body{
+    min-height: 500px;
+    padding-bottom: 50px;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 0px 30px 25px;
+}
+
+.footer-section{
+    padding-top: 50px;
+}
+
+#copyright{
+    margin-top: 25px;
+}

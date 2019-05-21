@@ -18,7 +18,10 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('')
+    .addEntry('about-bg','./assets/img/about-bg.jpg')
+    .addEntry('history-bg','./assets/img/hourglass.png')
+    .addEntry('tid_logo','./assets/img/tid_logo.png')
+    .addEntry('logo','./assets/img/advitrust-logo.png')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
@@ -47,7 +50,11 @@ Encore
         useBuiltIns: 'usage',
         corejs: 3
     })
-
+    .autoProvideVariables({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+    })
     // enables Sass/SCSS support
     //.enableSassLoader()
 
