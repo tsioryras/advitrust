@@ -6,6 +6,10 @@
 
 
 .hidden{
+    display: none!important;
+}
+
+#mobile-nav-toggle{
     display: none;
 }
 
@@ -32,13 +36,20 @@ a:hover{
     text-decoration: none;
 }
 
-#adv_logo_1{
+#adv_logo_1, #logo-side{
     display: none;
 }
 
-#close-menu{
-    display: none;
+#adv_logo{
+    margin-left: -20px;
 }
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 
 /*  ================================== */
 /*  Body Styles
@@ -129,17 +140,17 @@ p{
 /*--------- end brand Area -------------*/
 
 /*  ================================== */
-/*  End Body Styles
+        /*  End Body Styles */
 /*  ================================== */
 
 
 /* =================================== */
-/*  Footer Styles
+        /*  Footer Styles */
 /* =================================== */
 footer{
     background: black;
-    color: white;
-    padding: 0px 30px 25px;
+    color: #ffffff;
+    padding: 0 30px 25px;
 }
 
 .footer-section{
@@ -194,7 +205,7 @@ footer{
 }
 
 .single-footer-widget .bb-btn {
-    color: #8490ff;
+    /*color: #8490ff;*/
     color: #fff;
     font-weight: 300;
     border-radius: 0;
@@ -226,7 +237,7 @@ footer{
 .single-footer-widget .btn .lnr {
     line-height: inherit;
     font-size: 13px;
-    padding: 0px 4px;
+    padding: 0 4px;
 }
 
 .single-footer-widget ::-moz-selection {
@@ -326,17 +337,20 @@ footer{
 
 /*==================responsive========================*/
 @media (max-width: 1160px){
-    .navbar-header nav{
-        display: none;
-        }
 
     .navbar-header nav ul li a{
         color: #FFFFFF;
     }
 
+    #logo-side{
+        display: block;
+        max-width: 200px;
+        margin-left: -50px;
+    }
+
     #close-menu{
         position: fixed;
-        top:30px;
+        top:25px;
         right: 30px;
         float: right;
     }
@@ -355,21 +369,16 @@ footer{
         left:0;
         background: darkgrey;
         opacity: 0.7;
-        display: none;
     }
 
     #side-menu{
-        padding-left: 0;
-        float: right;
-        bottom:0;
-        left: 0;
-        top: 0;
-        width:250px;
         position:fixed;
-        z-index: 1000;
-        display: none;
-        background: #0b0b0b;
-        color: #FFFFFF;
+        z-index:1000;
+        width:250px;
+        background: #3F3F3F;
+        top:0;
+        bottom:0;
+        left:-251px;
     }
 
     #mobile-nav-toggle{
@@ -401,5 +410,6 @@ footer{
 
     #adv_logo_1{
         display: block;
+        width: 45px;
     }
 }

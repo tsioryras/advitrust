@@ -26,6 +26,7 @@ Encore
     .addEntry('logo_2','./assets/img/logo.png')
     .addEntry('logo1','./assets/img/logo_1.png')
     .addEntry('info','./assets/img/info.png')
+    .addEntry('fav','./assets/img/fav.png')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
