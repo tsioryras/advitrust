@@ -115,39 +115,6 @@
                     </div>
                 </div>
         </footer>
-
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
-        <script>
-            $("#mobile-nav-toggle" ).click(function() {
-                $("#back-shadow").toggleClass("hidden");
-                $(this).addClass("hidden");
-                $("#side-menu").css({
-                    'left': '0','transition-property': 'left', 'transition-duration': '0.5s'
-                });
-            });
-
-            $( "#close-menu" ).click(function() {
-                $("#back-shadow").toggleClass("hidden");
-                $("#mobile-nav-toggle").toggleClass("hidden");
-                $("#side-menu").css({
-                    'left': '-250px','transition-property': 'left', 'transition-duration': '0.5s'
-                });
-            });
-        </script>
-        <script>
-            let wrap = $("#menu-navbar");
-            $("body").on("scroll", function(e) {
-                if (this.scrollTop > 97) {
-                    wrap.addClass("fix-top");
-                    console.log(wrap);
-                } else {
-                    wrap.removeClass("fix-top");
-                }
-            });
-        </script>
     </body>
 </html>

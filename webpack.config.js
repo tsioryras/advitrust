@@ -18,6 +18,7 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    .addEntry('jquery','./assets/js/jquery3.js')
     .addEntry('about-l-bg','./assets/img/about-l-bg.png')
     .addEntry('about-r-bg','./assets/img/about-r-bg.png')
     .addEntry('history-bg','./assets/img/hourglass.png')
@@ -27,6 +28,25 @@ Encore
     .addEntry('logo1','./assets/img/logo_1.png')
     .addEntry('info','./assets/img/info.png')
     .addEntry('fav','./assets/img/fav.png')
+    .addEntry('tfm','./assets/img/tfm.png')
+    .addEntry('aro','./assets/img/aro.png')
+    .addEntry('of','./assets/img/of.png')
+    .addEntry('ac','./assets/img/ac.png')
+    .addEntry('stc','./assets/img/stc.png')
+    .addEntry('font_linear_woff2','./assets/fonts/Linearicons-Free.woff2')
+    .addEntry('font_linear_eot','./assets/fonts/Linearicons-Free.eot')
+    .addEntry('font_linear_ttf','./assets/fonts/Linearicons-Free.ttf')
+    .addEntry('font_linear_woff','./assets/fonts/Linearicons-Free.woff')
+    .addEntry('font_linear_svg','./assets/fonts/Linearicons-Free.svg')
+    .addEntry('fontawesome-webfont_woff2','./assets/fonts/fontawesome-webfont.woff2')
+    .addEntry('fontawesome-webfont_eot','./assets/fonts/fontawesome-webfont.eot')
+    .addEntry('fontawesome-webfont_ttf','./assets/fonts/fontawesome-webfont.ttf')
+    .addEntry('fontawesome-webfont_woff','./assets/fonts/fontawesome-webfont.woff')
+    .addEntry('fontawesome-webfont_svg','./assets/fonts/fontawesome-webfont.svg')
+    .addEntry('FontAwesome-oft','./assets/fonts/FontAwesome.otf')
+    .addEntry('montserrat_black','./assets/fonts/Montserrat-Black.ttf')
+    .addEntry('montserrat_bold','./assets/fonts/Montserrat-Bold.ttf')
+    .addEntry('montserrat_light','./assets/fonts/Montserrat-Light.ttf')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
