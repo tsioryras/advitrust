@@ -21,6 +21,7 @@ Encore
     .addEntry('jquery','./assets/js/jquery3.js')
     .addEntry('about-l-bg','./assets/img/about-l-bg.png')
     .addEntry('about-r-bg','./assets/img/about-r-bg.png')
+    .addEntry('banner-r','./assets/img/banner-r.png')
     .addEntry('history-bg','./assets/img/hourglass.png')
     .addEntry('tid_logo','./assets/img/tid_logo.png')
     .addEntry('logo','./assets/img/advitrust-logo.png')

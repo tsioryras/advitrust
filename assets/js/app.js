@@ -21,32 +21,32 @@ $(document).ready(function() {
 // require the JavaScript
 $("#mobile-nav-toggle" ).click(function() {
     $("#back-shadow").toggleClass("hidden");
+    $("#close-menu").toggleClass("hidden");
     $(this).addClass("hidden");
     $("#side-menu").css({
-        'left': '0','transition-property': 'left', 'transition-duration': '0.5s'
+        'left': '0','transition-property': 'left', 'transition-duration': '0.4s'
     });
+    $("#content_body").css({'overflow-y':'hidden'});
 });
 
 $( "#close-menu" ).click(function() {
     $("#back-shadow").toggleClass("hidden");
+    $("#close-menu").toggleClass("hidden");
     $("#mobile-nav-toggle").toggleClass("hidden");
     $("#side-menu").css({
-        'left': '-250px','transition-property': 'left', 'transition-duration': '0.5s'
+        'left': '-250px','transition-property': 'left', 'transition-duration': '0.4s'
     });
+    $("#content_body").css({'overflow-y':'auto'});
 });
 
 $(function(){
     $(window).bind("scroll", function() {
         let $this = $(this);
-        if ($this.scrollTop() > 97) {
-            $("#menu-navbar").addClass("fixed-top");
-            $("#menu-navbar").css({'background':'#ffffff','font-size':'1.10rem'});
+        if ($this.scrollTop() > 110) {
+            $("#menu-navbar").addClass("fixed-scroll");
         }else{
-            $("#menu-navbar").removeClass("fixed-top");
+            $("#menu-navbar").removeClass("fixed-scroll");
         }
-        $(".fixed-top").css({
-            'top': '0','transition-property': 'top', 'transition-duration': '0.2s'
-        });
     });
 });
 //console.log('Hello Webpack Encore! Edit me in assets/js/app.js');

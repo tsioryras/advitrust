@@ -30,8 +30,7 @@
         {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
     </head>
     <body>
-        <div id="back-shadow" class="hidden"><button id="close-menu" class="btn btn-outline-secondary"><span class="lnr lnr-cross"></span></button></div>
-        <header class="navbar navbar-default " id="menu-navbar">
+        <header class="navbar navbar-default fixed" id="menu-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ path('welcome') }}">
                     <img id="adv_logo" alt="logo" src="{{ asset('build/images/advitrust-logo.png') }}"/>
@@ -48,14 +47,14 @@
                             <li><a href="{{ path('t_i_d') }}">Trophée Initiatives Durables</a></li>
                         </ul>
                     </nav>
+                    <div id="back-shadow" class="hidden"><button id="close-menu" class="btn btn-outline-secondary hidden"><span class="lnr lnr-cross"></span></button></div>
                 </div>
             </div>
         </header>
-
-        <div class="container" id="content_body">
+        <div id="content_body">
             {% block body %}{% endblock %}
         </div>
-        <footer class="footer-area section-gap" style="text-align: center">
+        <footer class="footer-area" style="text-align: center">
                 <div class="row">
                     <div class="footer-section col-lg-4 offset-lg-1 col-md-6 col-sm-12" style="text-align: left">
                         <div class="single-footer-widget">
@@ -71,7 +70,7 @@
                             <!-- Begin Mailchimp Signup Form -->
                             <div class="footer-section" id="mc_embed_signup">
                                 <form action="https://advitrust-consulting.us19.list-manage.com/subscribe/post?u=f26aada1e1dbb9fc28ecf27f4&amp;id=b858971b66" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
-                                    <h4>Abonnez-vous à notre newsletter</h4>
+                                    <h4>Abonnez-vous à notre newsletter*</h4>
                                     <div class="input-group">
                                         <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Entrez votre adresse email" required=""/>
                                         <div class="input-group-btn">
@@ -79,7 +78,7 @@
                                                 <span class="lnr lnr-arrow-right"></span>
                                             </button>
                                         </div>
-                                        <div class="info"></div>
+                                        <div class="info"><small>*Nous ne divulguerons pas votre adresse email</small></div>
                                     </div>
                                 </form>
                             </div>

@@ -13,6 +13,29 @@
     display: none;
 }
 
+.fixed-scroll{
+    transition: all 0.5s;
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    background: #ffffff;
+}
+
+.fixed{
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: #FFFFFF;
+    border:none!important;
+}
+
+#menu-navbar{
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    transition: top 1s;
+}
+
 .navbar-header nav ul li{
     display: inline-block;
     padding: 20px;
@@ -44,12 +67,6 @@ a:hover{
     margin-left: -20px;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 
 /*  ================================== */
 /*  Body Styles
@@ -57,6 +74,7 @@ a:hover{
 #content_body{
     min-height: 500px;
     padding-bottom: 50px;
+    padding-top: 97.5px;
 }
 .justify{
     text-align: justify;
@@ -74,12 +92,29 @@ p{
     padding-top: 100px;
 }
 
+/*accueil section*/
+#accueil{
+    min-height: 500px;
+}
+
+.banner-left{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/banner-l.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+/*end accueil section*/
+
 /*About Section */
 #home-about-right, #history-about-left{
     background-image: url("../img/about-r-bg.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 /* end About Section */
 
@@ -363,7 +398,7 @@ footer{
 
     #back-shadow{
         position: fixed;
-        z-index: 2000;
+        z-index: 500;
         top:0;
         bottom: 0;
         right: 0;
@@ -374,7 +409,7 @@ footer{
 
     #side-menu{
         position:fixed;
-        z-index:2001;
+        z-index:1000;
         width:250px;
         background: #3F3F3F;
         top:0;
@@ -413,4 +448,5 @@ footer{
         display: block;
         width: 45px;
     }
+
 }

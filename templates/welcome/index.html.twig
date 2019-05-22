@@ -6,21 +6,18 @@
 
     <!-- start banner Area -->
     <section class="banner-area" id="accueil">
-        <div class="container">
             <div class="row fullscreen align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 col-sm-12 banner-left">
-                    <h1 style="">Mettez votre business sur orbite!</h1>
+                    <h1>Mettez votre business sur orbite!</h1>
                     <p id="sous-titre">
                         Consultance en Communication et en RSE
-
                     </p>
                     <!--<a class="rcornersa" href="#nouschoisir">En savoir plus</a>-->
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 banner-right d-flex align-self-end">
-                    <!--<img class="img-fluid" src="img/hero-img.png" alt="">-->
+                <div class="col-lg-6 col-md-6 col-sm-12 banner-right">
+                    <img class="boost" src="{{ asset('build/images/banner-r.png') }}" alt="boost">
                 </div>
             </div>
-        </div>
     </section>
     <!-- End banner Area -->
 
@@ -31,7 +28,7 @@
                     <img class="img-fluid" src="{{ asset('build/images/about-l-bg.png') }}" alt="about_advitrust"/>
                     <img class="img-fluid-responsive" src="{{ asset('build/images/info.png') }}" alt="about_advitrust"/>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12" id="home-about-right" >
+                <div class="col-lg-6 col-md-6 col-sm-12" id="home-about-right">
                     <h2 class="text-uppercase"> QUI SOMMES NOUS?</h2>
                     <div class="justify">
                         <p>Comme le gâteau qui est un ensemble de plusieurs ingrédients sélectionnés,
@@ -44,7 +41,7 @@
                             en restant concentré sur votre coeur de métier.
                         </p>
                     </div>
-                    <button id="rcorners" class="btn btn-outline-secondary" onclick="location.href="{{ path('services') }}" type="button">Nos services</button>
+                    <button class="btn btn-outline-secondary" onclick='location.href="{{ path('services') }}' type="button">Nos services</button>
                 </div>
             </div>
 
