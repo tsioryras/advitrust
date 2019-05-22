@@ -33,6 +33,7 @@ Encore
     .addEntry('aro','./assets/img/aro.png')
     .addEntry('of','./assets/img/of.png')
     .addEntry('ac','./assets/img/ac.png')
+    .addEntry('p-bg','./assets/img/partners-bg.png')
     .addEntry('stc','./assets/img/stc.png')
     .addEntry('font_linear_woff2','./assets/fonts/Linearicons-Free.woff2')
     .addEntry('font_linear_eot','./assets/fonts/Linearicons-Free.eot')

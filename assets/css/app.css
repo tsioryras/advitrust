@@ -3,13 +3,15 @@
 @import "magnific-popup.css";
 @import "font-awesome.min.css";
 @import "linearicons.css";
+@import "owl.carousel.css";
+@import "animate.min.css";
 
 
 .hidden{
     display: none!important;
 }
 
-#mobile-nav-toggle{
+#mobile-nav-toggle,#close-menu{
     display: none;
 }
 
@@ -26,7 +28,6 @@
     right: 0;
     left: 0;
     z-index: 1;
-    background: #FFFFFF;
     border:none!important;
 }
 
@@ -67,14 +68,12 @@ a:hover{
     margin-left: -20px;
 }
 
-
 /*  ================================== */
 /*  Body Styles
 /*  ================================== */
 #content_body{
     min-height: 500px;
     padding-bottom: 50px;
-    padding-top: 97.5px;
 }
 .justify{
     text-align: justify;
@@ -97,7 +96,17 @@ p{
     min-height: 500px;
 }
 
+#rcorner{
+    border-radius: 50px;
+    background: #1fc1c1;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
 .banner-left{
+    padding-top: 100px;
     padding-left: 50px;
     padding-right: 50px;
     background-image: url("../img/banner-l.png");
@@ -174,6 +183,18 @@ p{
 }
 
 /*--------- end brand Area -------------*/
+
+
+/*************tid****************/
+#tid{
+    vertical-align: middle;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*************end tid****************/
 
 /*  ================================== */
         /*  End Body Styles */
@@ -385,6 +406,7 @@ footer{
     }
 
     #close-menu{
+        display: block;
         position: fixed;
         top:25px;
         right: 30px;

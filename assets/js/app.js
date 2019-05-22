@@ -30,8 +30,8 @@ $("#mobile-nav-toggle" ).click(function() {
 });
 
 $( "#close-menu" ).click(function() {
-    $("#back-shadow").toggleClass("hidden");
     $("#close-menu").toggleClass("hidden");
+    $("#back-shadow").toggleClass("hidden");
     $("#mobile-nav-toggle").toggleClass("hidden");
     $("#side-menu").css({
         'left': '-250px','transition-property': 'left', 'transition-duration': '0.4s'
@@ -42,7 +42,7 @@ $( "#close-menu" ).click(function() {
 $(function(){
     $(window).bind("scroll", function() {
         let $this = $(this);
-        if ($this.scrollTop() > 110) {
+        if ($this.scrollTop() > 50) {
             $("#menu-navbar").addClass("fixed-scroll");
         }else{
             $("#menu-navbar").removeClass("fixed-scroll");
