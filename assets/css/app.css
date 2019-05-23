@@ -125,7 +125,7 @@ p{
     padding-top: 100px;
     padding-left: 50px;
     padding-right: 50px;
-    background-image: url("../img/banner-l.png");
+    background-image: url("{{asset('buiild/images/banner-l.png')}}");
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 500px;
@@ -139,7 +139,7 @@ p{
 
 /*About Section */
 #home-about-right, #history-about-left{
-    background-image: url("../img/about-r-bg.png");
+    background-image: url("{{asset('buiild/images/about-r-bg.png')}}");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
@@ -198,7 +198,7 @@ p{
 /*--------- start brand Area -------------*/
 .brands-area {
     padding-bottom: 50px;
-    background-image: url("../img/partners-bg.png");
+    background-image: url("{{asset('buiild/images/partners-bg.png')}}");
 }
 
 .partner{
