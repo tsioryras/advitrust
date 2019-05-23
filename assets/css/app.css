@@ -28,7 +28,7 @@ h1,h3{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     border:none!important;
 }
 
@@ -96,6 +96,22 @@ p{
     min-height: 500px;
 }
 
+.intro_1{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 250px;
+}
+
+.intro{
+    padding-top: 125px;
+    text-align: center;
+}
+
+.boost{
+    width:100%;
+}
+
 #rcorner{
     border-radius: 50px;
     background: #1fc1c1;
@@ -114,6 +130,11 @@ p{
     background-repeat: no-repeat;
     min-height: 500px;
 }
+
+.banner-right{
+    text-align: center;
+}
+
 /*end accueil section*/
 
 /*About Section */
@@ -417,6 +438,10 @@ footer{
         color: #FFFFFF;
     }
 
+    #menu-navbar{
+        background: #FFFFFF;
+    }
+
     #logo-side{
         display: block;
         max-width: 200px;
@@ -474,11 +499,17 @@ footer{
     #service-top, #home-about-left{
         text-align: center;
     }
+
+    .banner-right{
+        padding-top: 97px;
+    }
+
+
 }
 
 
-@media (max-width: 755px){
-    .img-fluid, #adv_logo{
+@media (max-width: 768px){
+    .img-fluid{
         display: none;
     }
 
@@ -489,13 +520,25 @@ footer{
         padding-bottom: 20px;
     }
 
-    #adv_logo_1{
-        display: block;
-        width: 45px;
+    .banner-left{
+        display: none;
     }
 
     .banner-left h1{
         padding-top: 50px;
+    }
+
+    .intro_1{
+        padding-top: 77px;
+        padding-right:  50px;
+        padding-left: 50px;
+        display: block;
+        top: 250px;
+    }
+
+    .trophy{
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
 }
