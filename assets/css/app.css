@@ -431,10 +431,13 @@ footer{
         float: right;
     }
 
+    #side-menu ul {
+        padding-bottom: 50px;
+    }
+
     #side-menu ul li{
         display: block;
         width: 100%;
-        padding: 25px 0;
     }
 
     #back-shadow{
