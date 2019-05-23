@@ -20,19 +20,19 @@ class TIDController extends AbstractController
     }
 
     /**
-    * @Route("/rules", name="rules_file")
+    * @Route("/rules", name="rules")
     **/
         public function downloadRules(){
-            $response = new BinaryFileResponse('path/to/../templates/reglement_TID.docx');
+            $response = new BinaryFileResponse('../templates/reglement_TID.docx');
             $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT,'reglement_TID.docx');
             return $response;
         }
 
     /**
-     * @Route("/form", name="form_file")
+     * @Route("/form", name="form")
      **/
     public function downloadForm(){
-        $response = new BinaryFileResponse('path/to/../templates/formulaire_TID.docx');
+        $response = new BinaryFileResponse('../templates/formulaire_TID.docx');
         $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT,'reglement_TID.docx');
         return $response;
     }
