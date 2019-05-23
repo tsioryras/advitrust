@@ -28,6 +28,7 @@
 
         <link rel="stylesheet" type="text/css" href="{{ asset('build/app.css') }}">
         {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
+
     </head>
     <body>
         <header class="navbar navbar-default fixed" id="menu-navbar">
@@ -90,8 +91,9 @@
                         <div class="single-footer-widget">
                             <h4>Où nous trouver</h4>
                             <p>
-                                Lot III B 57 Morarano Andoharanofotsy Antananarivo 102
-                            </p>
+                                Lot III B 57 Morarano Andoharanofotsy <br>102 Antananarivo Madagascar
+                            </p><br>
+                            <h4>Nous contacter</h4>
                             <p>
                                 +261 32 67 705 86 <br>
                                 +261 34 13 486 26
@@ -110,7 +112,7 @@
                         <div class="single-footer-widget">
                             <img src="{{ asset('build/images/logo.png') }}" alt="advitrust logo white">
                         </div>
-                        <p>@copyright - 2019 </p>
+                        <p>&copy; copyright - 2019 by <a href="https://tsioryras.eu/" target="_blank">tsioryras</a></p>
                     </div>
                 </div>
         </footer>

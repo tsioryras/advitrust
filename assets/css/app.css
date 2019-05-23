@@ -1,14 +1,15 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
-@import "magnific-popup.css";
 @import "font-awesome.min.css";
 @import "linearicons.css";
-@import "owl.carousel.css";
-@import "animate.min.css";
 
 
 .hidden{
     display: none!important;
+}
+
+h1,h3{
+    font-weight: bolder;
 }
 
 #mobile-nav-toggle,#close-menu{
@@ -17,7 +18,7 @@
 
 .fixed-scroll{
     transition: all 0.5s;
-    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    box-shadow: -21.213px 21px 30px 0 rgba(158, 158, 158, 0.3);
     background: #ffffff;
 }
 
@@ -73,7 +74,6 @@ a:hover{
 /*  ================================== */
 #content_body{
     min-height: 500px;
-    padding-bottom: 50px;
 }
 .justify{
     text-align: justify;
@@ -152,46 +152,39 @@ p{
 
 /*--------- start brand Area -------------*/
 .brands-area {
-    padding: 80px 0;
+    padding-bottom: 50px;
+    background-image: url("../img/partners-bg.png");
 }
 
-.brands-area .brand-wrap .owl-carousel .owl-item img {
-    width: auto !important;
+.partner{
+    padding-top: 50px;
+    color: #FFFFFF;
 }
-
-.brands-area .brand-wrap .single-brand {
-    text-align: center;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-webkit-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: .5;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-
-.brands-area .brand-wrap .single-brand:hover {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-webkit-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: grayscale(0%);
-    opacity: 1;
-}
-
 /*--------- end brand Area -------------*/
 
 
 /*************tid****************/
 #tid{
     vertical-align: middle;
+    width: 80%;
+    margin: auto;
+}
+
+#tid_list li{
+    display: inline-block;
+    list-style: none;
 }
 
 .text-center{
     text-align: center;
+}
+
+.area{
+    padding-bottom: 50px;
+}
+.area button{
+    border-radius: 0!important;
+    text-align: left;
 }
 
 /*************end tid****************/
