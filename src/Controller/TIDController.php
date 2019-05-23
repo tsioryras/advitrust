@@ -23,7 +23,7 @@ class TIDController extends AbstractController
     * @Route("/rules", name="rules")
     **/
         public function downloadRules(){
-            $response = new BinaryFileResponse('../templates/tid/reglement_TID.docx');
+            $response = new BinaryFileResponse('../templates/tid/docs/reglement_TID.docx');
             $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT,'reglement_TID.docx');
             return $response;
         }
@@ -32,7 +32,7 @@ class TIDController extends AbstractController
      * @Route("/form", name="form")
      **/
     public function downloadForm(){
-        $response = new BinaryFileResponse('../templates/tid/formulaire_TID.docx');
+        $response = new BinaryFileResponse('../templates/tid/docs/formulaire_TID.docx');
         $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT,'reglement_TID.docx');
         return $response;
     }

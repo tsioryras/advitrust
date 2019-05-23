@@ -48,5 +48,11 @@ $(function(){
             $("#menu-navbar").removeClass("fixed-scroll");
         }
     });
+
+    let  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrollTop >50){
+        $("#menu-navbar").css({'background':'#ffffff'});
+    }
+    //console.log( scrollTop);
 });
 //console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
