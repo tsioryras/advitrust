@@ -20,13 +20,13 @@ $(document).ready(function() {
 
 // require the JavaScript
 $("#mobile-nav-toggle" ).click(function() {
+    $("body").css({'overflow-y':'hidden'});
     $("#back-shadow").toggleClass("hidden");
     $("#close-menu").toggleClass("hidden");
     $(this).addClass("hidden");
     $("#side-menu").css({
         'left': '0','transition-property': 'left', 'transition-duration': '0.4s'
     });
-    $("#content_body").css({'overflow-y':'hidden'});
 });
 
 $( "#close-menu" ).click(function() {
@@ -36,7 +36,7 @@ $( "#close-menu" ).click(function() {
     $("#side-menu").css({
         'left': '-250px','transition-property': 'left', 'transition-duration': '0.4s'
     });
-    $("#content_body").css({'overflow-y':'auto'});
+    $("body").css({'overflow-y':'auto'});
 });
 
 $(function(){
