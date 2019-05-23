@@ -32,6 +32,7 @@ Encore
     .addEntry('tfm','./assets/img/tfm.png')
     .addEntry('aro','./assets/img/aro.png')
     .addEntry('of','./assets/img/of.png')
+    .addEntry('ck','./assets/img/check.png')
     .addEntry('ac','./assets/img/ac.png')
     .addEntry('p-bg','./assets/img/partners-bg.png')
     .addEntry('stc','./assets/img/stc.png')

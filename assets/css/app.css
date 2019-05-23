@@ -129,6 +129,9 @@ p{
 
 
 /*Services Styles*/
+.services-area{
+    padding-bottom: 50px;
+}
 
 .single-services{
     text-align: center;
@@ -148,7 +151,28 @@ p{
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*end Services Styles*/
+
+/* produits styles*/
+.produit_list{
+    text-align: left;
+}
+
+.produit_list li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.check{
+    width: 40px;
+}
+
+.note{
+    color: #007bff;
+    font-style: italic;
+}
+/*end produits styles*/
 
 /*--------- start brand Area -------------*/
 .brands-area {
@@ -159,6 +183,7 @@ p{
 .partner{
     padding-top: 50px;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 /*--------- end brand Area -------------*/
 
@@ -462,6 +487,10 @@ footer{
     #adv_logo_1{
         display: block;
         width: 45px;
+    }
+
+    .banner-left h1{
+        padding-top: 50px;
     }
 
 }
